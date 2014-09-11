@@ -19,7 +19,7 @@ function send_mail($email)
 {
 						$to = "$email";
 						$subject = 'Thanking you';
-						$message = "Thank you for visiting newcns.esy.es \n please click on below link to confirm your identification  ";	
+						$message = "Thank you for visiting www.mad-man.esy.es \n please click on below link to confirm your identification  ";	
 						$header = "From: mad-man";
 						$mail_sent = mail($to, $subject, $message, $header);
 }
@@ -29,7 +29,7 @@ function showProfile($id)
 		$user=mysql_result($result,0,3);
 		if (file_exists("profile_pics/$id.jpg"))
             echo "<img src='profile_pics/$id.jpg' align='left' />";
-		else echo"<img src='profile_pics/default.jpg' align='left' />";
+		else echo"<img src='profile_pics/default.jpg' style='width:30px;height:30px;' align='left' />";
 }
 function data_uri($file, $mime) 
 {	  
