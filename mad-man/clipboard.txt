@@ -1,0 +1,1 @@
+select post from followers,posts where followers.following=posts.email and followers.email='manitejavarma'
