@@ -1,8 +1,7 @@
 warmani
 =======
 
-A social networking site made with php and mysql that has features like writing posts,choosing profile pics,displaying other 
-members,following and followers.
+A social networking site made with php and mysql that has features like writing posts,choosing profile pics,displaying other members,following and followers.
 
 Its not mobile friendly.....
 
@@ -17,9 +16,9 @@ If you follow other members your home page will be displayed with the posts of t
 
    Its difficult for mysql injection because I used few mysql functions that makes it hard to inject.
 
-The first page that is sign in page has no javascript validation or only fewer forms.I used jquery splash which rotates and shows the 
-loaded data until page gets completly loaded.Also as user enters his email id ,then a registered users  pofile pic will be
-displayed on side.
+The first page that is sign in page has no javascript validation or only fewer forms.I used jquery splash which rotates and shows the loaded data until page gets completly loaded.Also as user enters his email id ,then a registered users  pofile pic will be displayed on side.
+
+  And also you have to import the mysql file that are having specific tables and data.
 
 
 
