@@ -1,5 +1,4 @@
-
- <?php
+<?php
 session_start();
 if(isset($_SESSION['id']))
  { 
@@ -51,7 +50,7 @@ body{
 	background:#F3F5F5;
 	border-radius:3px;
 }
-#side_panel{
+#side{
 
 
 display:block;
@@ -199,7 +198,7 @@ border-radius:12px;
 	function checklemail(email)
     {
 		if(email.value=='')
-		{document.getElementById('members').innerHTML=''
+		{document.getElementById('side').innerHTML=''
 		return
 		}
 		params="email="+email.value;
@@ -214,7 +213,7 @@ border-radius:12px;
         if (this.readyState == 4)
             if (this.status == 200)
                 if (this.responseText != null)
-                    document.getElementById('members').innerHTML = this.responseText
+                    document.getElementById('side').innerHTML = this.responseText
 		}
 		request.send(params)
 
@@ -222,7 +221,7 @@ border-radius:12px;
 	function checkemail(email)
     {
 		if(email.value=='')
-		{document.getElementById('members').innerHTML=''
+		{document.getElementById('side').innerHTML=''
 		return
 		}
 		params="email="+email.value;
@@ -237,7 +236,7 @@ border-radius:12px;
         if (this.readyState == 4)
             if (this.status == 200)
                 if (this.responseText != null)
-                    document.getElementById('members').innerHTML = this.responseText
+                    document.getElementById('side').innerHTML = this.responseText
 		}
 		request.send(params)
 
@@ -258,8 +257,9 @@ border-radius:12px;
 </div>
 
 
-		<div id='side_panel'>
-			
+<div id='side'>
+	<?php echo @$_GET['data']; ?>
+		
 		</div>
 <div id='body' class="scroll">     
 <div id='login_container'>
@@ -269,8 +269,7 @@ Email     <input type='email' name='email' onBlur='checklemail(this)' maxlength=
 Password  <input type='password' name='password' maxlength='35' />
                
 	<input type='submit' value='Log in' />
-			<?php echo @$_GET['data']; ?>
-
+			
 </pre>
 </form>
 </div>
