@@ -2,7 +2,7 @@ warmani
 =======
  
 This site uses php and mysql which has the following features
- * login and sigup form with sessions
+ * login and sigup form with sessions (dont be frustated with no validations)
  * Having profile and home pages.
  * Choosing profile pictures.
  * Displaying other members who use this site.On clicking their profiles can be viewed.
