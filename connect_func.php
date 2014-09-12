@@ -29,7 +29,7 @@ function showProfile($id)
 		$user=mysql_result($result,0,3);
 		if (file_exists("profile_pics/$id.jpg"))
             echo "<img src='profile_pics/$id.jpg' align='left' />";
-		else echo"<img src='profile_pics/default.jpg' style='width:30px;height:30px;' align='left' />";
+		else echo"<img src='profile_pics/default.jpg' style='width:130px;height:130px;' align='left' />";
 }
 function data_uri($file, $mime) 
 {	  

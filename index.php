@@ -10,7 +10,6 @@ if(isset($_SESSION['id']))
 
  
  
-
  
 ?>
 <?php require_once 'signupuser.php' ; ?>
@@ -52,7 +51,7 @@ body{
 	background:#F3F5F5;
 	border-radius:3px;
 }
-#members{
+#side_panel{
 
 
 display:block;
@@ -76,21 +75,10 @@ color:green;
 }
 
 
-#users_stat{
-clear:both;
-}
+
 input[type='submit']{
 background:rgba(30px,1px,3px,0.3);
 border-radius:12px;
-}
-.user{
-color:rgb(202, 111, 111);
-text-align:center;
-font-size:1.5em;
-}
-#small-size{
-color:rgb(145,0,13);
-font-size:0.65em;
 }
 
 .pace {
@@ -270,10 +258,10 @@ font-size:0.65em;
 </div>
 
 
-		<div id='members'>
+		<div id='side_panel'>
 			
 		</div>
-<div id='body' class="scroll">
+<div id='body' class="scroll">     
 <div id='login_container'>
 <form id='login_form' action='login.php' method='post'>
 <pre>          
