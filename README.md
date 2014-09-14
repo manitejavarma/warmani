@@ -1,31 +1,65 @@
-warmani
-=======
+
+![MAD MAN](/title.png)
+====
  
-This site uses php and mysql which has the following features
- * login and sigup form with sessions (dont be frustated with no validations)
- * Having profile and home pages.
- * Choosing profile pictures.
- * Displaying other members who use this site.On clicking their profiles can be viewed.
- * Having follow and following button that uses ajax calling.
- * splash loader that shows the progress of the page loaded
+ A  Social  network . Feel  free to report any bugs by mailing to  manitejavarma@yahoo.com.
+
  
-Its uses are
- * Its a basic social networking site that uses their social feed and only done using html,css,php and mysql.
+### Run On Localhost (Linux)
+
+Here is a simple tutorial on how to run Open on a Linux Apache Web Server.
+
+1) Install Git by Running the following commands
+```
+sudo apt-get update && sudo apt-get install git
+```
+
+2) CD (Change Directory) to the Apache directory by running
+```
+cd /var/www/
+```  
+   in Apache Server versions 2.5 and above, the folder is `/var/www/html` instead of `/var/www`
+      
+3) Now do this to pull the source code from GitHub to the folder "open" in /var/www
+```
+git clone https://github.com/manitejavarma/warmani.git open
+```
+	Now open's files will be in the `/var/www/open` directory
+
+4) 	Import mysql database `database.sql` through phpmyadmin and username,host,password in `connect_func.php`
+
+5) 	Go To http://localhost/open to see it live in action
+
+### Run On Localhost (Windows)
+ For windows it is good to get with xampp.
+
+1)Download zip file of my repo and paste it in  `/xampp/htdocs/` folder.
+
+2)Import mysql database `database.sql` through phpmyadmin and username,host,password in `connect_func.php`.
+
+3)Run server and enter `localhost:80` in web browser.
+
+#### Languages used
+ Basic Php,html,css,mysql,ajax
+
+#### Libraries used in mad-man
+ Jquery pace progress bar .Inline script for pace progress plugin is written.
+
+###Pros
+ * Hard for mysql injection.
+ * A simple social feed 
+ * Displaying profile picture after entering email-id in login page.
+
+###Cons
+ As I said it is plain and simple it may have cons.
+ * Wierd looking login page with no validation.
+ * More redirected pages in script.
  
- * Its difficult for mysql injection because I used few mysql functions that makes it hard to inject.
+#About
+
+ Mad-Man has been developed by mani teja varma for over a month and is used as testimonial server.
+
  
-
-The first page is signing in and signing out.
-After signing up or signing in You are redirected to your profile where you can choose your profile picture and also post a data with time and date specified.
-Next side to it we have members displayed who are signed up  in this site and when you click their pics you are redirected to their profiles.You can see their posts and 
-either follow or unfollow them .
-If you follow other members your home page will be displayed with the posts of those you followed.
-
-
-
-The first page that is sign in page has no javascript validation or only fewer forms.I used jquery splash which rotates and shows the loaded data until page gets completly loaded.Also as user enters his email id ,then a registered users  pofile pic will be displayed on side.
-
-  *** And also you have to import the mysql file that are having specific tables and data.
 
 
 
