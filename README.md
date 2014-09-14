@@ -53,7 +53,7 @@ git clone https://github.com/manitejavarma/warmani.git open
 ###Cons
  As I said it is plain and simple it may have cons.
  * Wierd looking login page with no validation.
- * More redirected pages in script.
+ * Not mobile friendly
  
 #About
 
